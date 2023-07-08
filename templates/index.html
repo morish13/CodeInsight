@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coding Problem Search Engine</title>
+    <link rel="icon" type="image/x-icon" href="https://icons-for-free.com/iconfiles/png/512/coding+html+programming+web+icon-1320184881567336963.png">
+    <link rel="stylesheet" href="/static/style.css" />
+    
+  </head>
+  <body>
+    <h1 class="typewriter" style="color: rgb(226, 43, 43);">Search Your Coding Problems</h1>
+    <div class="form">
+      <form method="POST">
+        <div class="item">{{ form.hidden_tag() }}</div>
+        <div class="item">{{ form.search.label }} :</div>
+        <div class="item">{{ form.search(class="search-input") }}</div>
+        <div class="item">{{ form.submit(class="submit-button") }}</div>
+       
+      </form>
+    </div>
+    <br>
+    <div class="maincontainer">
+      {% if results %}
+      {% for result in results %}
+      <div class="result"> <a href="{{ result['Question Link'] }}">{{ result['Question'] }}</a>
+        <br><br>
+      </div>
+      {% endfor %}
+    {% else %}
+      <div class="result" style="color: black;">Sorry no result exists !</div>
+    {% endif %}
+    </div>
+    
+  </body>
+
+</html>

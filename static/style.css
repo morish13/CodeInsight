@@ -1,0 +1,114 @@
+*{
+    padding: 0px;
+    margin:0 ;
+}
+
+
+  body {
+    /* background-color: rgb(20, 20, 21); */
+    background-color: antiquewhite;
+    background-image:radial-gradient(antiquewhite,antiquewhite,orange);
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* margin-left: 500px; */
+ 
+  }
+  input[type="text"]::placeholder {
+    color: black;
+  }
+a{
+   color:rgb(40, 31, 162);
+  text-decoration:none;
+}
+a:hover{
+   color: red;
+}
+.form {
+    margin: 10px;
+    width: 50%;
+    color: white;
+    background-color: rgb(0, 102, 255);
+    box-shadow: -2px -2px 5px rgb(0, 187, 255);
+    font-size: 30px;
+    padding:4px;
+    border-radius:10px;
+    /* display: flex;
+    justify-content: space-between; */
+    
+}
+
+.item {
+    
+  /* Optional: Add some spacing between items */
+    display: inline;
+}
+/* static/style.css */
+.search-input {
+    width: 40%; /* Adjust the width as per your preference */
+    height: 30%; /* Adjust the height as per your preference */
+    font-size: 30px; /* Adjust the font size as per your preference */
+  }
+  
+  .submit-button {
+    font-size: 16px; /* Adjust the font size as per your preference */
+    height: 40px;
+     margin-bottom: 2px; /* Adjust the height as per your preference */
+    /* Add any other styling properties you desire */
+  }
+
+.typewriter{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(0, 187, 255); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 5px ; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 50% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    25% { border-color: rgb(0, 255, 55); }
+  }
+.maincontainer{
+    border: 5px solid rgb(0, 102, 255);
+    box-shadow: -1px -1px 5px rgb(0, 102, 255);
+   background-color: white;
+              
+    padding: 10px;
+  max-height: 50%;
+  min-width: 50%;
+  max-width: 50%;
+  min-height: 50%;
+  border-radius: 10px;
+  overflow: auto;
+  
+}
+.result{
+    border: 0.001px solid gray;
+    box-shadow: 2px 2px rgb(0, 102, 255);
+    border-radius: 5px;
+    margin:10px;
+    padding:5px;
+    font-size: 30px;
+    box-sizing: border-box;
+    
+}
+.foot{
+    margin-top: 20px;
+    background-color: black;
+    width:1500px;
+    height:50px;
+}
