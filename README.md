@@ -19,7 +19,7 @@ Make sure you have the following installed:
 1. Clone this repository to your local machine using the following command:
 
 ```
-$ git clone https://github.com/HunnyC/HackathonAZ.git
+$ git clone git@github.com:morish13/CodeInsight.git
 ```
 
 2.Create a Virtual Environment and Activate**
